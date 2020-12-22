@@ -1,0 +1,442 @@
+*{  
+	margin:0;
+	padding: 0;
+	font-family: Century Gothic;
+
+}
+@font-face {
+        font-family: Allura;
+        src:url(Allura-Regular.ttf);
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(user-login-bg.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position:fixed;
+	width:100%;
+	z-index:-100;
+
+}
+
+ul{
+	
+	text-align:right;
+	float:right !important;
+	line-height:30px;
+	width:92%;;
+	background-color:rgba(0, 0, 0, 0.7);
+	z-index:100;
+	list-style: none;margin-top: 3%;
+
+}
+ul li{
+	display: inline-block;
+
+}
+ul li a{
+	text-decoration: none;color: #fff;padding: 5px 20px;border: 1px solid transparent;
+}
+ul li a:hover{
+	background-color: #fff;color: #000;
+}
+.logo{
+	float: left;
+	width: 6%;
+	height: 6%;
+	
+	margin-left:2%;
+	
+	padding:0px;
+	border:0px;
+	z-index:1;
+
+}
+.main{
+	width:100%;
+	padding:0px;
+	border:0px;
+	margin:0px;
+
+}
+.title{
+	position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);
+}
+.title h1{
+	color: #fff;font-size: 70px;
+}
+.button{
+	position: absolute;top: 62%;left: 50%;transform: translate(-50%,-50%);
+
+}
+.btn{
+	border: 1px solid #fff;padding: 10px 30px;color: #fff;text-decoration: none;size:30px; background-color:rgba(0,0,0,0.3);
+
+}
+input {
+    margin: .4rem;
+	width:200px;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+}
+.btn:hover{
+	background-color:#fff;color:#000;
+}
+
+.transparent{
+background:rgba(255,255,255,0.5);
+}
+.tabcontent {
+	z-index:-1;
+    padding-top:121px
+    clear:both;
+   border: 0px;
+    position: absolute;
+    top: 68px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	display: inline-block;
+    overflow: auto;
+
+	width:100%
+	text-align:justify;
+	color:#FFF;
+
+	overflow:auto;
+	
+	}
+
+.leftbody{
+	float:left;
+	width:30%;
+	margin-top:2%;
+	padding:1%;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size:14px;
+	clear:both;
+}
+.midbody{
+	float:left;
+	width:30%;
+	padding:1%;
+	margin-top:2%;
+	margin-left:2%;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size:14px;
+}
+.rightbody{
+	float:right;
+	width:30%;
+	padding:1%;
+	margin-top:2%;
+	margin-left:2%;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size:14px;
+}
+.head{
+	width: 100%;
+    position: fixed;
+    border: 0px;
+    height: 3%;
+    top: 0;
+	z-index:-1;
+	
+}
+.smallbodyimage{
+	width:100%;
+	height:300px;
+}
+.banner{
+	font-size:48px;
+	float:left;
+	padding:0px;
+	border:0px;
+	margin:0px;
+	color:#fff;
+	position:absolute;
+	top:18px;
+	left:120px;
+	font-family:Allura;
+	
+}
+h3 {
+	margin-bottom:5px;
+}
+.bigbodyimage{
+	width:100%;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.headtab{
+	font-size:30px;
+	text-align:center;
+	width:100%;
+	float:left;
+	margin-bottom:20px;
+}
+.introBanner{
+	background-image:url(nepal-update-1280x665.jpg);
+	width:66%;
+	padding:17%;
+	font-size:60px;
+	height:100px;
+}
+.homeBodyWrapper{
+	background-color:rgba(0, 0, 0, 0.5);
+	margin:0px 10px;
+	padding:1%;
+}
+img{
+	display: block;
+  width: 100%;
+  height: auto;
+  
+overflow:hidden;
+	transition: transform .2s; }
+.leftbody img:hover{
+	transform: scale(1.05); 
+}
+
+.midbody img:hover{
+	transform: scale(1.05);
+}
+.rightbody img:hover{
+	transform: scale(1.05);	
+}
+#map{
+margin:3%;
+width:93%;
+height:400px;
+}
+.footer{
+	float:left;
+	width:100%;
+	margin-top:20px;
+	height:340px;
+	background-color:rgba(30, 30, 30, 1);
+	color:white;
+	
+	
+}
+.icons{
+	width:300px;
+	float:left;
+	margin-left:150px;
+	margin-top:50px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.myImg {
+   width:100%;
+	height:300px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.container {
+  position: relative;
+  clear:right;
+  float:left;
+	width:30%;
+	padding:1%;
+	background-color:rgba(0, 0, 0, 0.3);
+	margin-left:10px;
+	
+	
+}
+
+.leftcontainer {
+  
+  clear:both;
+	width:30%;
+	padding:1%;
+	background-color:rgba(0, 0, 0, 0.3);
+	margin-left:10px;
+	right:415px;
+	height:270px;
+	overflow:hidden;
+
+}
+.botcontainer {
+  position: relative;
+  float:left;
+	width:30%;
+	padding:1%;
+	background-color:rgba(0, 0, 0, 0.3);
+	margin-left:10px;
+	left:828px;
+	bottom:296px;
+	height:270px;
+	overflow:hidden;
+
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+overflow:hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.3);
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.leftcontainer:hover .overlay {
+  opacity: 1;
+}
+.botcontainer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+	margin-top:8px;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  padding :4%;;
+  text-align: justify;
+}
+.btnbook{
+	
+	position:absolute;
+	top:800px;
+	left:500px;
+	size:60px;
+}
+.book{
+	margin-top: 10%;
+width: 1370px;
+	height:500px;
+	z-index:100;
+	float:right;
+	text-align:center;
+	/*border-style: ridge;*/
+	color: white;
+	overflow:hidden;
+	background-color:rgba(0,0,0,0.5)
+	font-family: "Roboto",sans-serif;
+	font-size: 17px;
+}
